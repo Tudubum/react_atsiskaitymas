@@ -1,0 +1,123 @@
+body,
+.signin {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+}
+
+body{
+  background: url(https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);   
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+.PostCards{
+  display: flex;
+}
+
+.PostCardImg img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.singleCard{
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 390px;
+
+}
+
+/*   Log in  ir Sign up  */
+
+.logInHeader{
+  position: relative;
+  height: auto;
+  width: 405px;
+  margin: 80px auto;
+  padding: 60px 60px;
+  background-color: #F6FBF9;
+  border-radius: 20px;
+
+}
+
+.loginSignUpContainer{
+  display: flex;
+  gap: 10px;
+}
+
+
+.headerloginSignUp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.loginForm, .signUpForm{
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 20px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.loginForm input,  .signUpForm input{
+  height: 100%;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+   border: 1px solid rgb(217, 217, 217);
+   box-sizing: border-box;
+  font-size: 18px;
+  outline: 0;
+  padding: 4px 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.loginForm, .signUpForm label{
+  font-weight: 100;
+}
+
+.loginForm .submit, .signUpForm .submit{
+  background-color: #84C7AE;
+  margin-top: 29px;
+  height: 40px;
+}
+.loginForm .submit:hover, .signUpForm .submit:hover{
+  background-color: #5b8979;
+  color: white;
+}
+
+.loginForm h3, .signUpForm h3{
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.error{
+  margin-top: 10px;
+  color: red;
+}
+
+.logo{
+  height: 40px;
+  width: auto;
+  margin-right: 30px;
+}
+
+
+
+

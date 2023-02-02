@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "email": "giedre@gmail.com",
+      "password": "Giedre1"
+    },
+    {
+      "email": "kamile@kamile.com",
+      "password": "Kamile",
+      "passwordRepeat": "Kamile",
+      "id": 1675368203446
+    }
+  ],
+  "postai": [
+    {
+      "id": 1,
+      "title": "Žiema",
+      "description": "Nes labai patinka žiemos pramogos. Dievinu slidinėti su snowbordu!",
+      "image": "https://media.istockphoto.com/id/1184370791/photo/young-man-snowboarder-running-down-the-slope-in-alpine-mountains.jpg?b=1&s=170667a&w=0&k=20&c=5g0qhwGQzsa9jvklLNGoSw0-aFgXRpOoC_OzUZmMPjw="
+    },
+    {
+      "title": "Pavasaris",
+      "description": "Nes pavasarį viskas pražysta",
+      "image": "https://media.istockphoto.com/id/1301592082/photo/beautiful-meadow-field-with-fresh-grass-and-yellow-dandelion-flowers-in-nature.jpg?b=1&s=170667a&w=0&k=20&c=NQ7187Kjw4ND93c-oSw1S-U0-JGgA6KE6CxJx71Ah64=",
+      "id": 1675336384523
+    },
+    {
+      "title": "vvhv",
+      "description": " b b ",
+      "image": "https://media.istockphoto.com/id/1354852925/photo/mowed-green-frontyard-grass-before-residential-suburban-house-summer-sunny-day.jpg?b=1&s=170667a&w=0&k=20&c=m3lW1YvqQW-QfP1DePVt3At8vhxeyLDvJ2ELm9MFTEI=",
+      "id": 1675341090003
+    }
+  ]
+}

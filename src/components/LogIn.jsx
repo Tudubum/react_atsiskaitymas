@@ -1,11 +1,10 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import logo from "../images/logo.png"
 
-import Footer from './Footer';
 import UserContext from "../contexts/UserContext";
 
 const LogIn = () => {
@@ -41,9 +40,18 @@ const LogIn = () => {
                     <img src={logo} alt="logo" className="logo" />
                   </div>
                   <div className="loginSignUpContainer">
-                      <Link className="login" to='/logIn'>Log in</Link>
+                      <NavLink 
+                        className="login"
+                        style={({ isActive}) => {
+                            return {color: isActive ? '#84C7AE' : 'black'};}}
+                        to='/logIn'>Log in
+                        </NavLink>
                     <br />
-                    <Link to='/signUp'>Sign Up</Link>
+                    <NavLink 
+                        style={({ isActive}) => {
+                            return {color: isActive ? '#84C7AE' : 'black'};}}
+                        to='/signUp'>Sign Up
+                    </NavLink>
                   </div>  
                 </div>
             <div>
@@ -74,7 +82,6 @@ const LogIn = () => {
             </form>
         </div>
     </div>
-    <Footer/>
     </>
 );
 }

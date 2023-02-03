@@ -1,19 +1,29 @@
-body,
 .signin {
-  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
 
 }
 
+#root{
+  height: 100%;
+}
 
 body{
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+  
   background: url(https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);   
   background-size: cover;
   object-fit: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  height: 100vh;
+  position: relative;
+
 }
 
 .mainHeader{
@@ -29,6 +39,7 @@ body{
   align-items: center;
   height: 60px;
 }
+
 
 .mainHeader_links{
   display: flex;
@@ -47,6 +58,16 @@ body{
   background-color: #F6FBF9;
   border-radius: 20px;
 
+}
+
+.postForm{
+  position: relative;
+  height: auto;
+  width: 405px;
+  margin: 80px auto;
+  padding: 60px 60px;
+  background-color: #F6FBF9;
+  border-radius: 20px;
 }
 
 .headerloginSignUp_header{
@@ -95,6 +116,8 @@ input, .postForm .submit, textarea{
   margin-top: 10px;
 }
 
+
+
 label{
   font-weight: 100;
 }
@@ -109,8 +132,6 @@ label{
   background-color: #5b8979;
   color: white;
 }
-
-
 
 h3{
   margin-bottom: 30px;
@@ -137,12 +158,20 @@ h3{
   margin-right: 30px;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
 /* CARDS */
 
 .PostCards{
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 30px;
+  padding: 0 30px;
 }
 
 .postCardInfo{
@@ -154,20 +183,21 @@ h3{
 }
 
 .PostCardImg img{
-  width: 100%;
+  width: 200px;
   height: 250px;
   object-fit: cover;
-  object-position: center;
-  padding: 0;
+  object-position: center center;
 }
 
 .singleCard{
+  display: flex;
+  height: 250px;
   margin: 10px;
   background-color: #fff;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 390px;
+  width: 425px;
   padding: 0;
 
 }
@@ -177,7 +207,6 @@ h3{
 footer{
   background: rgb(42, 42, 42);
   height: 20px;
-  width: 100vw;
   color: #fff;
   margin: 0;
   display: flex;
@@ -186,6 +215,14 @@ footer{
   flex-direction: column;
   text-align: center;
   padding: 10px;
+  flex-shrink: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  position: sticky;
+
+
+
 }
 
 .footer h3{
@@ -242,6 +279,14 @@ footer{
   justify-content: center;
 }
 
+
+.navbar .submit{
+  background-color: #84C7AE;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 20px;
+}
 
 
 

@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import UserContext from "../contexts/UserContext";
 import Posts from './Posts';
 import MainHeader from './MainHeader';
-import Footer from './Footer';
 import PageOwnerPost from './PageOwnerPost';
 import PostContext from '../contexts/PostContext';
 
@@ -27,9 +26,10 @@ const Home = () => {
     return null;
   }
 
+
   return (
     <>
-      <MainHeader />
+      <MainHeader/>
       {isLoading ? (
         <div className="notFound">
           <h2>Loading...</h2>
@@ -46,7 +46,6 @@ const Home = () => {
           )}
         </>
       )}
-      <Footer />
     </>
   );
 };

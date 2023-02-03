@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../images/logo.png"
 
 const Header = () => {
@@ -10,9 +10,17 @@ const Header = () => {
                     <img src={logo} alt="logo" className="logo" />
                 </div>
                 <div className="headerloginSignUp_header">
-                    <Link className="login" to='/logIn'>Log in</Link>
+                    <NavLink 
+                    className="login active" 
+                    style={({ isActive}) => {
+                        return {color: isActive ? 'red' : 'black'};}}
+                    to='/logIn'>Log in
+                    </NavLink>
                     <br />
-                    <Link to='/signUp'>Sign Up</Link>
+                    <NavLink 
+                    style={({ isActive}) => {
+                        return {color: isActive ? 'red' : 'black'};}}
+                    to='/signUp'>Sign Up</NavLink>
                 </div>
             </div>
         </>

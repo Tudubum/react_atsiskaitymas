@@ -1,7 +1,19 @@
 import logo from "../images/logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+import React, { useContext } from 'react';
+import { useNavigate } from "react-router-dom";
+import UserContext from "../contexts/UserContext";
 
 const MainHeader = () => {
+    const { loggedInUser, setLoggedInUser } = useContext(UserContext);
+    const navigate = useNavigate();
+  
+    const handleLogout = () => {
+        setLoggedInUser(null);
+        navigate("/login");
+  };
+
     return ( 
         <>
             <div className="mainHeader">
@@ -10,9 +22,18 @@ const MainHeader = () => {
                         <img src={logo} alt="logo" className="logo" />
                     </div>
                     <div className="mainHeader_links">
-                        <Link to='/home'>Home</Link>    
-                        <Link className="addForm" to='/add'>Add your post</Link>  
+                        <NavLink 
+                        style={({ isActive}) => {
+                            return {color: isActive ? '#84C7AE' : 'black'};}}
+                        to='/home'>Home</NavLink>    
+                        <NavLink 
+                        style={({ isActive}) => {
+                            return {color: isActive ? '#84C7AE' : 'black'};}}
+                        className="addForm" to='/add'>Add your post</NavLink>  
                     </div>
+                    {loggedInUser && (
+                        <button className="submit" onClick={handleLogout}>Log Out</button>
+                    )}
                 </div>
             </div>
         

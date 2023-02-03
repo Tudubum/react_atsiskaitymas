@@ -23,6 +23,7 @@ const MainHeader = () => {
                     </div>
                     <div className="mainHeader_links">
                         <NavLink 
+                        className="addForm"
                         style={({ isActive}) => {
                             return {color: isActive ? '#84C7AE' : 'black'};}}
                         to='/home'>Home</NavLink>    
@@ -32,7 +33,7 @@ const MainHeader = () => {
                         className="addForm" to='/add'>Add your post</NavLink>  
                     </div>
                     {loggedInUser && (
-                        <button className="submit" onClick={handleLogout}>Log Out</button>
+                        <button className="submit_logout" onClick={handleLogout}>Log Out</button>
                     )}
                 </div>
             </div>

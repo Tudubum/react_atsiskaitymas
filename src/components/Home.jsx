@@ -1,23 +1,54 @@
-import React, { useContext } from 'react';
-import UserContext from "../contexts/UserContext";
+import React, { useContext, useState } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
+
+import UserContext from "../contexts/UserContext";
 import Posts from './Posts';
+import MainHeader from './MainHeader';
+import Footer from './Footer';
+import PageOwnerPost from './PageOwnerPost';
+import PostContext from '../contexts/PostContext';
 
 const Home = () => {
-  const {loggedInUser} = useContext(UserContext);
-  const navigation = useNavigate();
+  const { loggedInUser } = useContext(UserContext);
+  const { post } = useContext(PostContext)
+  const [isLoading, setLoading] = useState(true);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!loggedInUser) {
+      navigate('/login');
+    } else {
+      setLoading(false);
+    }
+  }, [loggedInUser, navigate]);
 
   if (!loggedInUser) {
-    navigation('/login');
     return null;
   }
 
-  return ( 
+  return (
     <>
-      <Posts/>
+      <MainHeader />
+      {isLoading ? (
+        <div className="notFound">
+          <h2>Loading...</h2>
+        </div>
+      ) : (
+        <>
+          <PageOwnerPost />
+          {post.length > 0 ? (
+            <Posts />
+          ) : (
+            <div className="notFound">
+              <h2>Įrašų nėra</h2>
+            </div>
+          )}
+        </>
+      )}
+      <Footer />
     </>
   );
-}
- 
+};
+
 export default Home;
- 

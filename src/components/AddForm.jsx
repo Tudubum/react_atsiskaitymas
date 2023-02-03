@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import PostContext from "../contexts/PostContext";
 import UserContext from "../contexts/UserContext";
 import { useContext} from "react";
+import MainHeader from "./MainHeader";
+import Footer from "./Footer";
 
 const AddForm = () => {
 
@@ -27,15 +29,20 @@ const AddForm = () => {
         };
     
         addNewPost(newPost);
-        navigation('/');
+        navigation('/home');
       }
 
-      console.log(addNewPost)
+      if (!loggedInUser) {
+        navigation("/login");
+        return null;
+      }
     
       return (
          <>
-         <div className="placeForm">
-         <h3>ADD YOUR POST</h3>
+         <MainHeader/>
+         <div className="postForm">
+         <h1>ADD YOUR POST</h1>
+         <h3>Share your FAVORITE season</h3>
              <form onSubmit={handleSubmit}>
                  <label>
                      Pavadinimas:
@@ -45,7 +52,7 @@ const AddForm = () => {
                  </label>
                  <label>
                      Aprašymas:
-                     <input type="textarea" value={formInputs.description} 
+                     <textarea type="textarea" value={formInputs.description} 
                      onChange={(e)=> setFormInputs({...formInputs, description:e.target.value})}
                      />
                  </label>
@@ -57,7 +64,9 @@ const AddForm = () => {
                  <button className="submit" type="submit">Add new post</button>
              </form>
          </div>
-     </> );
+         <Footer/>
+     </> 
+  );
 }
  
 export default AddForm;

@@ -9,7 +9,7 @@ const Post = () => {
             {post.map((data) => (
                 <div className="singleCard" key={data.id}>
                     <div className="postCardInfo">
-                        <h3>{data.title}</h3>
+                        <h2>{data.title}</h2>
                         <p>{data.description}</p>
                     </div>
                     <div className="PostCardImg">

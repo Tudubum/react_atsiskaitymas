@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import UserContext from "../contexts/UserContext";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo2.png"
 
+import logo from "../images/logo.png"
+
+import Footer from "./Footer";
+import UserContext from "../contexts/UserContext";
 
 
 const SignUp = () => {
@@ -34,7 +36,6 @@ const SignUp = () => {
         }
       }
     
-      
       return (
         <>
           <div className="logInHeader">
@@ -72,9 +73,10 @@ const SignUp = () => {
             <input type="submit" value="Register" className="submit" />
           </form>
           {
-            invalidUserEmail && <span>User with such email already exists.</span>
+            invalidUserEmail && <span className="error">User with such email already exists.</span>
           }
           </div>
+          <Footer/>
         </>
       );
 }

@@ -1,15 +1,17 @@
 import { useContext } from 'react';
 import { useState } from "react";
-import UserContext from "../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
-//import Header from '../components/Header'
 import { Link } from 'react-router-dom';
-import logo from "../images/logo2.png"
+
+import logo from "../images/logo.png"
+
+import Footer from './Footer';
+import UserContext from "../contexts/UserContext";
 
 const LogIn = () => {
 
     const [userInfo, setUserInfo] = useState({
-        userName: '',
+        email: '',
         password: ''
       });
     
@@ -31,7 +33,6 @@ const LogIn = () => {
         }
       } 
     
-
     return ( 
     <>
         <div className="logInHeader">
@@ -73,6 +74,7 @@ const LogIn = () => {
             </form>
         </div>
     </div>
+    <Footer/>
     </>
 );
 }

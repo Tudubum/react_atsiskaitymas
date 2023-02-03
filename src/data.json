@@ -10,6 +10,18 @@
       "password": "Kamile",
       "passwordRepeat": "Kamile",
       "id": 1675368203446
+    },
+    {
+      "email": "marvel@marvel.com",
+      "password": "Marvel",
+      "passwordRepeat": "Marvel",
+      "id": 1675414156497
+    },
+    {
+      "email": "marius@marvel.com",
+      "password": "Marius",
+      "passwordRepeat": "Marius",
+      "id": 1675414366078
     }
   ],
   "postai": [
@@ -26,10 +38,16 @@
       "id": 1675336384523
     },
     {
-      "title": "vvhv",
-      "description": " b b ",
-      "image": "https://media.istockphoto.com/id/1354852925/photo/mowed-green-frontyard-grass-before-residential-suburban-house-summer-sunny-day.jpg?b=1&s=170667a&w=0&k=20&c=m3lW1YvqQW-QfP1DePVt3At8vhxeyLDvJ2ELm9MFTEI=",
-      "id": 1675341090003
+      "title": "Ruduo",
+      "description": "Kodėl man patinka ruduo? -Rudenį man patinka, kai krenta klevo lapai, kurie yra gražūs , spalvingi. ",
+      "image": "https://images.unsplash.com/photo-1507371341162-763b5e419408?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGF1dHVtbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "id": 1675411399775
+    },
+    {
+      "title": "Vasara",
+      "description": "Ledai…. Mėgstu vasarą, nes niekas neburba jog kasdien suvalgau po porciją ledų. Kodėl dar mėgstu vasarą? Nes tik vasarą dėviu sijoną. Nes vasariniai bateliai yra gražesni nei žieminiai batai. Nes nuo saulės žmonės pasikrauna geros nuotaikos ir dažniau šypsosi.",
+      "image": "https://media.istockphoto.com/id/1252458719/photo/the-beautiful-girl-in-sunflowers-field-emotional-girl-enjoying-nature-and-laughing-on-summer.jpg?s=612x612&w=0&k=20&c=rfZ5C2YPb1lZ1Eog3qt0oSJZCgkM3ZY5bzGTeVMBpXY=",
+      "id": 1675411652498
     }
   ]
 }

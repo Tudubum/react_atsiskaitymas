@@ -1,13 +1,9 @@
 import { createContext, useEffect, useState } from "react";
-//import { useContext } from "react";
-//import UserContext from "./UserContext";
 
 const PostContext = createContext();
 
 const PostProvider = ({children}) =>{
     const [post, setPost] = useState([]);
-    //const { loggedInUser } = useContext(UserContext);
-
 
     useEffect(() => {
         const fetchData = async () => {
@@ -18,7 +14,6 @@ const PostProvider = ({children}) =>{
         fetchData();
     },[]);
 
-// 1 pabaiga.
 
 const addNewPost = async (newPost) => {
     const res = await fetch('http://localhost:3000/postai', {

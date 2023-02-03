@@ -40,6 +40,7 @@ const AddForm = () => {
   return (
      <>
      <MainHeader/>
+     <div className="LogIn_Bg">
      <div className="postForm">
      <h1>ADD YOUR POST</h1>
      <h3>Share your FAVORITE season</h3>
@@ -63,6 +64,7 @@ const AddForm = () => {
              </label>
              <button className="submit" type="submit">Add new post</button>
          </form>
+     </div>
      </div>
  </> 
   );

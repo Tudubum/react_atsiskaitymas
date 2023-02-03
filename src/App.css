@@ -14,7 +14,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-
+/*
 body{
   
   background: url(https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);   
@@ -25,12 +25,23 @@ body{
   position: relative;
 
 }
+*/
+
+.LogIn_Bg{
+  background-image: url(https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);   
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: repeat;
+  height: 100vh;
+  margin-top: 0;
+  padding-top: 40px;
+  width: 100%;
+}
 
 .mainHeader{
   height: 60px;
-  width: auto;
   background-color: #F6FBF9;
-  padding: 10px 50px;
+  padding: 30px 50px;
 }
 
 .navbar{
@@ -38,6 +49,7 @@ body{
   justify-content: space-between;
   align-items: center;
   height: 60px;
+  width: 100%;
 }
 
 
@@ -66,27 +78,6 @@ body{
 
 /*   Log in, Sign up ADD FORMS  */
 
-.logInHeader, .postForm{
-  position: relative;
-  height: auto;
-  width: 405px;
-  margin: 80px auto;
-  padding: 60px 60px;
-  background-color: #F6FBF9;
-  border-radius: 20px;
-
-}
-
-.postForm{
-  position: relative;
-  height: auto;
-  width: 405px;
-  margin: 80px auto;
-  padding: 60px 60px;
-  background-color: #F6FBF9;
-  border-radius: 20px;
-}
-
 .headerloginSignUp_header{
   display: flex;
   justify-content: flex-end;
@@ -108,9 +99,21 @@ body{
   font-size: 16px;
 }
 
+.logInHeader{
+  position: relative;
+  height: auto;
+  width: 405px;
+  margin: 80px auto;
+  padding: 60px 60px;
+  background-color: #F6FBF9;
+  border-radius: 20px;
+
+}
+
 .loginForm, .signUpForm, .postForm{
   border-radius: 20px;
   box-sizing: border-box;
+  background-color: #F6FBF9;
   height: auto;
   padding: 20px;
   width: 400px;
@@ -119,7 +122,33 @@ body{
   margin: 20px auto;
 }
 
-input, .postForm .submit, textarea{
+.postForm{
+      padding: 50px 60px;
+      width: 500px;
+}
+
+.postForm .submit{
+  height: 40px;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(217, 217, 217);
+  box-sizing: border-box;
+  font-size: 18px;
+  outline: 0;
+  padding: 4px 20px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.Posts_Bg{
+  background-color: #5dc2de;
+  padding-top: 20px;
+  height: auto;
+}
+
+
+input, textarea{
   height: 100%;
   position: relative;
   width: 100%;
@@ -132,8 +161,6 @@ input, .postForm .submit, textarea{
   margin-bottom: 5px;
   margin-top: 10px;
 }
-
-
 
 label{
   font-weight: 100;
@@ -192,15 +219,18 @@ a:hover{
 }
 
 .postCardInfo{
-  padding: 10px 15px;
+  padding: 10px;
+  width: 215px;
+  padding-bottom: 20px;
 }
 
 .postCardInfo p{
   font-weight: 100;
+  
 }
 
 .PostCardImg img{
-  width: 200px;
+  width: 210px;
   height: 250px;
   object-fit: cover;
   object-position: center center;
@@ -214,8 +244,7 @@ a:hover{
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 425px;
-  padding: 0;
+  width: 426px;
 
 }
 
@@ -223,7 +252,7 @@ a:hover{
 
 footer{
   background: rgb(42, 42, 42);
-  height: 20px;
+  height: 40px;
   color: #fff;
   margin: 0;
   display: flex;
@@ -232,14 +261,8 @@ footer{
   flex-direction: column;
   text-align: center;
   padding: 10px;
-  flex-shrink: 0;
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  position: sticky;
-
-
-
+ box-sizing: border-box;
 }
 
 .footer h3{
@@ -257,7 +280,7 @@ footer{
   height: auto;
   width: auto;
   background-color: #F6FBF9;
-  margin: 20px 40px;
+  margin: 10px 40px;
   padding: 10px 20px;
   border-radius: 10px;
 

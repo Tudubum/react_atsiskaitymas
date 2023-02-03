@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import UserContext from "../contexts/UserContext";
 import Posts from './Posts';
 import MainHeader from './MainHeader';
-import PageOwnerPost from './PageOwnerPost';
 import PostContext from '../contexts/PostContext';
 
 const Home = () => {
@@ -36,7 +35,6 @@ const Home = () => {
         </div>
       ) : (
         <>
-          <PageOwnerPost />
           {post.length > 0 ? (
             <Posts />
           ) : (

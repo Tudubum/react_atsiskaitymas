@@ -36,7 +36,7 @@ const SignUp = () => {
       }
     
       return (
-        <>
+        <div className="LogIn_Bg">
           <div className="logInHeader">
                 <div className="headerloginSignUp">
                   <div>
@@ -82,7 +82,7 @@ const SignUp = () => {
             invalidUserEmail && <span className="error">User with such email already exists.</span>
           }
           </div>
-        </>
+        </div>
       );
 }
  

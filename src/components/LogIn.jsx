@@ -33,7 +33,7 @@ const LogIn = () => {
       } 
     
     return ( 
-    <>
+    <div className="LogIn_Bg">
         <div className="logInHeader">
                 <div className="headerloginSignUp">
                   <div>
@@ -82,7 +82,7 @@ const LogIn = () => {
             </form>
         </div>
     </div>
-    </>
+    </div>
 );
 }
  
